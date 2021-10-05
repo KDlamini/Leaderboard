@@ -1,14 +1,13 @@
-import _ from 'lodash';
 import './style.css';
 
 const scoreData = [
-  {name: "name", score: 100,},
-  {name: "name", score: 100,},
-  {name: "name", score: 100,},
-  {name: "name", score: 100,},
-  {name: "name", score: 100,},
-  {name: "name", score: 100,},
-]
+  { name: 'name', score: 100 },
+  { name: 'name', score: 100 },
+  { name: 'name', score: 100 },
+  { name: 'name', score: 100 },
+  { name: 'name', score: 100 },
+  { name: 'name', score: 100 },
+];
 
 function loadTable() {
   const table = document.querySelector('.scoreboard-table');
