@@ -1,13 +1,27 @@
-import _ from 'lodash';
 import './style.css';
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash is required for this line to work
-    element.innerHTML = _.join(['Hello', 'Leaderboard'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+const scoreData = [
+  { name: 'name', score: 100 },
+  { name: 'name', score: 53 },
+  { name: 'name', score: 67 },
+  { name: 'name', score: 51 },
+  { name: 'name', score: 23 },
+  { name: 'name', score: 98 },
+];
+
+function loadTable() {
+  const table = document.querySelector('.scoreboard-table');
+
+  scoreData.forEach((data) => {
+    const tr = document.createElement('tr');
+    tr.className = 'table-row';
+    const td = document.createElement('td');
+    td.className = 'table-data';
+    td.innerHTML = `${data.name}: ${data.score}`;
+
+    tr.appendChild(td);
+    table.appendChild(tr);
+  });
+}
+
+loadTable();
