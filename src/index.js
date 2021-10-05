@@ -2,11 +2,11 @@ import './style.css';
 
 const scoreData = [
   { name: 'name', score: 100 },
-  { name: 'name', score: 100 },
-  { name: 'name', score: 100 },
-  { name: 'name', score: 100 },
-  { name: 'name', score: 100 },
-  { name: 'name', score: 100 },
+  { name: 'name', score: 53 },
+  { name: 'name', score: 67 },
+  { name: 'name', score: 51 },
+  { name: 'name', score: 23 },
+  { name: 'name', score: 98 },
 ];
 
 function loadTable() {
