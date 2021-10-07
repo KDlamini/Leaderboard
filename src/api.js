@@ -38,7 +38,8 @@ export const saveToApi = async (gameID, user, score) => {
         'Content-type': 'application/json; charset=UTF-8',
       },
     });
-    return await response.json();
+    const json = await response.json();
+    return json;
   } catch (error) {
     throw new Error(error.message);
   }
