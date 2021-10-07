@@ -29,14 +29,23 @@ Clone this repository or download the Zip folder:
 ```
 git@github.com:KDlamini/Leaderboard.git
 ```  
+To download all the dependencies, in the root directory run:
+```
+npm install
+```
+run webpack server to open browser:
+```
+npm run start
+```
+
+build application:
+```
+npm run build
+```
 
 ## Test
 To track linter errors locally follow these steps:  
 
-Download all the dependencies run:
-```
-npm install
-```
 Track HTML linter errors run:
 ```
 npx hint .
