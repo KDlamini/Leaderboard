@@ -7,9 +7,6 @@ The leaderboard website displays scores submitted by different players. It also 
 
 This project is part of the Microverse curriculum. The main objective is to understand how to consume APIs.
 
-## Live Preview
-[https://kdlamini.github.io/Leaderboard/](https://kdlamini.github.io/Leaderboard/)
-
 ## Built With
 
 - Html/Css
@@ -33,7 +30,7 @@ To download all the dependencies, in the root directory run:
 ```
 npm install
 ```
-run webpack server to open browser:
+run webpack server to open app in browser:
 ```
 npm run start
 ```
