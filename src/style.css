@@ -55,6 +55,8 @@ h1 {
 
 .scoreboard-table {
   width: 100%;
+  height: auto;
+  min-height: 250px;
   margin: 20px 0;
   border: 1px solid grey;
   border-radius: 2px;

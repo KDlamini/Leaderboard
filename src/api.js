@@ -12,21 +12,21 @@ const createGame = async () => {
       },
     });
     const json = await response.json();
-    const gameID = json.result.split(' ')[3];
-    localStorage.setItem('gameID', JSON.stringify(gameID));
+    const gameId = json.result.split(' ')[3];
+    localStorage.setItem('gameID', JSON.stringify(gameId));
   } catch (error) {
     throw new Error(error.message);
   }
 };
 
-export const gameID = async () => {
-  const gameId = JSON.parse(localStorage.getItem('gameID'));
+export const gameID = () => {
+  const id = JSON.parse(localStorage.getItem('gameID'));
 
-  if (!gameId) {
-    await createGame();
+  if (!id) {
+    createGame();
   }
 
-  return gameId;
+  return id;
 };
 
 export const saveToApi = async (gameID, user, score) => {
