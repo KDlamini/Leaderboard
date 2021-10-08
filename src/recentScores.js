@@ -1,7 +1,7 @@
-const recentScores = (scoreData) => {
+const recentScores = (scores) => {
   const table = document.querySelector('.scoreboard-table');
 
-  scoreData.forEach((data) => {
+  scores.forEach((data) => {
     const tr = document.createElement('tr');
     tr.className = 'table-row';
     const td = document.createElement('td');

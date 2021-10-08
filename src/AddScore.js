@@ -5,8 +5,14 @@ const addScore = () => {
   const name = document.getElementById('name');
   const score = document.getElementById('score');
 
-  addForm.addEventListener('submit', () => {
-    saveToApi(gameID, name.value, score.value);
+  addForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    saveToApi(gameID, name.value, score.value)
+      .then((response) => {
+        if (response.result === 'Leaderboard score created correctly.') {
+          window.location.reload();
+        }
+      });
   });
 };
 

@@ -53,11 +53,16 @@ h1 {
   margin-right: 38%;
 }
 
-.scoreboard-table {
-  width: 100%;
+.table-container {
+  height: auto;
+  min-height: 250px;
   margin: 20px 0;
   border: 1px solid grey;
   border-radius: 2px;
+}
+
+.scoreboard-table {
+  width: 100%;
 }
 
 /* reserved for add styling feature
