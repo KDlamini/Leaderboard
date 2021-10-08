@@ -7,6 +7,9 @@ The leaderboard website displays scores submitted by different players. It also 
 
 This project is part of the Microverse curriculum. The main objective is to understand how to consume APIs.
 
+## Live Preview
+[https://kdlamini.github.io/Leaderboard/](https://kdlamini.github.io/Leaderboard/dist)
+
 ## Built With
 
 - Html/Css
