@@ -4,6 +4,7 @@
 
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved in the Leaderboard API service. Built using webpack, Javascript and APIs.
 
+![screenshot](./src/img/Screenshot%20from%202021-10-08%2015-59-48.png)
 
 This project is part of the Microverse curriculum. The main objective is to understand how to consume APIs.
 
