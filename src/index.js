@@ -6,9 +6,9 @@ import './style.css';
 
 const loadTable = () => {
   window.onload = () => {
-    gameID() ?
-    getScores(gameID).then((scores) => recentScores(scores)) :
-    null;
+    if (gameID()) {
+      getScores(gameID).then((scores) => recentScores(scores));
+    }
   };
 };
 
